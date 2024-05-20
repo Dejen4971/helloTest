@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="onlinePL.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="login-btn">Login</a></li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Welcome to the Online Learning Platform</h1>
+        <p>Explore a world of knowledge, learn at your own pace.</p>
+        <button>Get Started</button>
+      </section>
+
+      <section id="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="course-list">
+          <!-- Course items will be dynamically generated here -->
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-list">
+          <!-- Testimonial items will be dynamically generated here -->
+        </div>
+      </section>
+
+      <section id="signup-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Sign Up</h2>
+          <form id="signup-form">
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="signup-email" required>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="signup-password" required>
+            <label for="signup-confirm-password">Confirm Password:</label>
+            <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Login</h2>
+          <form id="login-form">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <button type="submit">Login</button>
+            <a href="#" id="reset-password-btn">Forgot Password?</a>
+          </form>
+        </div>
+      </section>
+
+      <section id="reset-password-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Reset Password</h2>
+          <form id="reset-password-form">
+            <label for="reset-email">Email:</label>
+            <input type="email" id="reset-email" name="reset-email" required>
+            <button type="submit">Reset Password</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="admin-dashboard" class="hidden">
+        <h2>Admin Dashboard</h2>
+        <div class="admin-actions">
+          <button id="add-course-btn">Add Course</button>
+          <button id="manage-users-btn">Manage Users</button>
+          <button id="view-reports-btn">View Reports</button>
+        </div>
+        <div class="admin-content">
+          <!-- Admin-specific content will be dynamically generated here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <p>Learn more about our online learning platform.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Get in touch with us for more information.</p>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2023 Online Learning Platform. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script src="online.js"></script>
+</body>
+</html>
